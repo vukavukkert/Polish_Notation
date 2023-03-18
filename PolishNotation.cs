@@ -10,10 +10,10 @@ namespace polishNotation
 
         //польская запись это вид записи математических выражений где
         //операнды пишутся перед операторами
-        static public double Calculate(string input)
+        static public double Calculate(string input) //Входной метод в котором
         {
-            string output = GetExpression(input);
-            double result = Counting(output);
+            string output = GetExpression(input); // преобразовываем код в постфиксную запись.
+            double result = Counting(output); //считаем
             return result;
         }
         static private string GetExpression(string input)
